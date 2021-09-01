@@ -9,12 +9,12 @@ function Nav(props) {
                 <span className="navbar-toggler-icon"></span>
                 </button>
             <div className="collapse navbar-collapse" data-parent="#selector" id="navbarToggler">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navLink">
                    
-                <li><a href="/About">About Me</a></li>
-              <li><a href="/Projects">My Projects</a></li>
-              <li>  <a href="/Contact">Contact Me</a></li>
-              <li>  <a href="/Resume">Resume</a></li>
+                <li><a href="#About">About Me</a></li>
+              <li><a href="#Projects">My Projects</a></li>
+              <li>  <a href="#Contact">Contact Me</a></li>
+              <li>  <a href="#Resume">Resume</a></li>
         </ul></div></div>
             </nav>
             </header>

@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import Nav from '../Nav';
+import React, { useState, useEffect } from 'react';
+import Nav from '../Nav'
 import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
 import Resume from '../Resume';
+
+
 
 function Home(){
     useEffect(() => {
