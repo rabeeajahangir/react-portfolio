@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import profilePicture from "../../assets/images/"
+// import profilePicture from "../../assets/images/""
 
 const About = () => {
     return(
