@@ -1,56 +1,24 @@
 import React from 'react';
 
-function Nav() {
-    const categories = [
-        {
-          name: "About Me",
-          description:
-            "My description",
-        },
-        { name: "Contact Me", 
-        description: "FOrm" },
-
-        { name: "Projects", 
-        description: "My portfolio" },
-        {
-          name: "Resume",
-          description: "Details of my career history",
-        },
-      ];
-  return (
-    <header>
-  
-  <nav>
-    <ul className="flex-row">
-      <li className="mx-2">
-        <a href="#about">
-          About me
-        </a>
-      </li>
-      <li className="mx-2">
-        <a href="#contact">
-          Contact me
-        </a>
-      </li>
-      <li className="mx-2">
-        <a href="#projects">
-          Projects
-        </a>
-      </li>
-       {categories.map((category) => (
-        <li
-          className="mx-1"
-          key={category.name}
-        >
-          <span>
-            {category.name}
-          </span>
-        </li>
-      ))}
-    </ul>
-  </nav>
-</header>
-  );
-}
-
-export default Nav;
+function Nav(props) {
+      return(
+            <header>
+            <nav className="navbar navbar-nav navbar-expand-md navbar-expand-lg navbar-light text-center" >
+            <div className="container-fluid justify-content-center text-center">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+            <div className="collapse navbar-collapse" data-parent="#selector" id="navbarToggler">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                   
+                <li><a href="/About">About Me</a></li>
+              <li><a href="/Projects">My Projects</a></li>
+              <li>  <a href="/Contact">Contact Me</a></li>
+              <li>  <a href="/Resume">Resume</a></li>
+        </ul></div></div>
+            </nav>
+            </header>
+      )
+    };
+    
+    export default Nav;

@@ -4,9 +4,6 @@ import Footer from '../Footer';
 function Resume(){
 
     return(
-  
-  
-
 
 <section className='my-5'>
 <div className='container d-flex flex-column text-center'>

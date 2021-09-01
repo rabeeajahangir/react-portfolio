@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import NavBar from '../Nav';
+import Nav from '../Nav';
 import About from '../About';
 import Projects from '../Projects';
 import Contact from '../Contact';
@@ -33,7 +33,7 @@ function Home(){
 
     return (
     <div> 
-        <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
         <div>
             {writePage(currentPage)}
         </div>
