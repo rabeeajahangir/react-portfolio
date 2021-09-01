@@ -1,14 +1,14 @@
 import React from 'react';
 
-// import profilePicture from "../../assets/images/""
+import profilePicture from "../../assets/images/IMG_1340.JPG";
 
 const About = () => {
     return(
         <section className="my-5" >
       <h1 id="about">Who am I?</h1>
-                {/* <div className='p-2'>
+                <div className='p-2'>
             <img src={profilePicture} className='my-2 profile-image' alt='profile'></img>
-            </div> */}
+            </div>
 
             <div className='p-2'>
             <p className='about-me'>
