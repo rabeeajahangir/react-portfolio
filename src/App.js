@@ -1,15 +1,11 @@
 import React from 'react';
-import About from "../src/components/About";
-import NavBar from "../src/components/Nav";
+import Home from './components/Home';
 
+import './App.css';
+import './index.css'
 
 function App() {
-  return (
-   <div>
-      <NavBar></NavBar>
-      <main>
-        <About></About>
-      </main></div>
-  )}
+    return(<Home/>)
+}
 
 export default App;

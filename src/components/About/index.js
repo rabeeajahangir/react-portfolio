@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Footer from '../Footer';
 import profilePicture from "../../assets/images/IMG_1340.JPG";
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
             When I am not working or coding, I love to spend time with my family (I have 2 young kids), exploring new places and netflix. I also love reading, music, and travelling. I think I would describe myself as an Extroverted Introvert. I love talking to people and socializing but also need my precious 'me' time :) and keep my circle small.
             </p>
             </div>
-           
+            <div><Footer/></div>
             
         </section>
     )
