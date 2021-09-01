@@ -1,6 +1,6 @@
 import React from 'react';
-import About from "../src/components/AboutMe"
-import NavBar from "../src/components/NavBar"
+import About from "../src/components/About";
+import NavBar from "../src/components/Nav";
 
 
 function App() {
@@ -10,5 +10,6 @@ function App() {
       <main>
         <About></About>
       </main></div>
+  )}
 
 export default App;
