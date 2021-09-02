@@ -1,60 +1,62 @@
 import React from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-import About from "../About";
-import Projects from "../Projects";
-import Resume from "../Resume";
-import ContactForm from "../Contact";
+
+function Nav(props) {
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
 
 
-
-
-
-const  categories = [
-  { name: 'About', description: 'My description' },
-  { name: 'Projects', description: 'My description of projects' },
-  { name: 'Resume', description: 'Copy of my resume' },
-  { name: 'ContactForm', description: 'A form to contact me' }
-];
-
-function Nav() {
- 
-
-  const handleClick = () => {
-    console.log("click handled")
-  }
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
 
   return (
-    <header data-testid="header" className="flex-row px-1">
-     
+    <header className="flex-row px-1">
+      
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#About" onClick={() => handleClick()}>
+            <a data-testid="about" href="#about">
               About me
             </a>
           </li>
-          <li><a href="#Resume" onClick={() => handleClick()}>
-              Resume
-            </a>
-          </li>
-          <li><a href="#Projects" onClick={() => handleClick()}>
+          <li className="mx-2">
+            <a data-testid="projects" href="#projects">
              Projects
             </a>
           </li>
-          <li><a href="#ContactForm" onClick={() => handleClick()}>
-             Contact
+          <li className="mx-2">
+            <a data-testid="resume" href="#resume">
+              Resume
             </a>
           </li>
+          
         
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
+          <li className={"mx-2"}>
+            <span onClick={() => handleClick('#Contact')}>
+              Contact
+            </span>
+          </li>
+          {categories.map((category) => (
+            <li
+              className={`mx-1 ${
+                currentCategory.name === category.name
+                }`}
+              key={category.name}
+            >
+              <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                }}
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
