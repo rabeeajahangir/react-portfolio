@@ -117,10 +117,10 @@ const Projects = () => {
                 <h1> Projects </h1>
             {projects.map(project => (
                 <div className='card-group col col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mx-auto align-self-center' key={project.name}>
-                <div className='card results-card col-sm-4 py-2 border-secondary' style={{"width": "60rem", "height": "35rem"}}>
+                <div className='card results-card col-sm-4 py-2 border-secondary' style={{"width": "60rem", "height": "35rem", "display": "flex"}}>
                 <a href={project.deploymentLink} className='card-link' target='blank'></a>
                 <div className='card-body'>
-                <h2 className='card-title mb-4'>{project.name}</h2>
+                <h2 className='card-title mb-4'style={{"display": "flex"}}>{project.name}</h2>
                 <p className='card-text fw-light'>{project.description}</p>
                 <ul className="list-group list-group-flush mb-4">
                     <li className="list-group-item fs-6 borderless border-0 p-1 pt-3">Technologies used:</li>

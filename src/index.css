@@ -31,7 +31,7 @@ body {
   font-family: cursive;
   background-size: auto;
   background-image: url('./assets/images/background.jpeg');
-  background-position: center;
+  background-position: wrap;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -134,6 +134,8 @@ textarea{
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
   border:black, solid, 20px;
 
 }
@@ -142,6 +144,7 @@ textarea{
   width: 60%;
   text-align: justify;
   border:solid;
+  flex-wrap: wrap;
   display: flex;
   border:3px solid #7a4335;
   justify-content: space-between;
@@ -191,4 +194,9 @@ textarea{
     flex-wrap: wrap;
     flex-direction: row;
   }
+}
+
+#contact-form {
+  margin: 80px;
+  padding: 40px;
 }

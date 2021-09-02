@@ -20,17 +20,17 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about">
+            <a data-testid="about" href="#About">
               About me
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="projects" href="#projects">
+            <a data-testid="projects" href="#Projects">
              Projects
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="resume" href="#resume">
+            <a data-testid="resume" href="#Resume">
               Resume
             </a>
           </li>
