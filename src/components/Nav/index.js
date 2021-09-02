@@ -1,24 +1,64 @@
-import React from 'react';
+import React from "react";
+import { capitalizeFirstLetter } from "../../utils/helpers";
+import About from "../About";
+import Projects from "../Projects";
+import Resume from "../Resume";
+import ContactForm from "../Contact";
 
-function Nav(props) {
-      return(
-            <header>
-            <nav className="navbar navbar-nav navbar-expand-md navbar-expand-lg navbar-light text-center" >
-            <div className="container-fluid justify-content-center text-center">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-                </button>
-            <div className="collapse navbar-collapse" data-parent="#selector" id="navbarToggler">
-            <ul className="navLink">
-                   
-                <li><a href="#About">About Me</a></li>
-              <li><a href="#Projects">My Projects</a></li>
-              <li>  <a href="#Contact">Contact Me</a></li>
-              <li>  <a href="#Resume">Resume</a></li>
-        </ul></div></div>
-            </nav>
-            </header>
-      )
-    };
-    
-    export default Nav;
+
+
+
+
+const  categories = [
+  { name: 'About', description: 'My description' },
+  { name: 'Projects', description: 'My description of projects' },
+  { name: 'Resume', description: 'Copy of my resume' },
+  { name: 'ContactForm', description: 'A form to contact me' }
+];
+
+function Nav() {
+ 
+
+  const handleClick = () => {
+    console.log("click handled")
+  }
+
+  return (
+    <header data-testid="header" className="flex-row px-1">
+     
+      <nav>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <a href="#About" onClick={() => handleClick()}>
+              About me
+            </a>
+          </li>
+          <li><a href="#Resume" onClick={() => handleClick()}>
+              Resume
+            </a>
+          </li>
+          <li><a href="#Projects" onClick={() => handleClick()}>
+             Projects
+            </a>
+          </li>
+          <li><a href="#ContactForm" onClick={() => handleClick()}>
+             Contact
+            </a>
+          </li>
+        
+          {
+            categories.map((category) => (
+              <li className="mx-1" key={category.name} >
+                <span onClick={() => { handleClick(); }}>
+                 {capitalizeFirstLetter(category.name)}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+export default Nav;
