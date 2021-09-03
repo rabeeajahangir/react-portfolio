@@ -114,7 +114,7 @@ const Projects = () => {
         <section>
             <div className='container'>
             <div className='row'>
-                <h1> Projects </h1>
+                <h1 id='Projects'> Projects </h1>
             {projects.map(project => (
                 <div className='card-group col col-sm-12 col-md-6 col-lg-6 mt-3 mb-3 mx-auto align-self-center' key={project.name}>
                 <div className='card results-card col-sm-4 py-2 border-secondary' style={{"width": "60rem", "height": "35rem", "display": "flex"}}>

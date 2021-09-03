@@ -20,26 +20,26 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#About">
+            <a href="#About">
               About me
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="projects" href="#Projects">
+            <a href="#Projects">
              Projects
             </a>
           </li>
           <li className="mx-2">
-            <a data-testid="resume" href="#Resume">
+            <a href="#Resume">
               Resume
             </a>
           </li>
           
         
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick('#Contact')}>
-              Contact
-            </span>
+          <li className="mx-2">
+            <a href="#Contact">
+             Contact
+            </a>
           </li>
           {categories.map((category) => (
             <li

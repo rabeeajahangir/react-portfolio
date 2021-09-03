@@ -3,7 +3,7 @@ import profilePicture from "../../assets/images/IMG_1340.JPG";
 
 const About = () => {
     return(
-        <section className="my-5" >
+        <section className="my-5" id= 'About' >
      
                 <div className='p-2'>
             <img src={profilePicture} className='my-2 profile-image' alt='profile'></img>
