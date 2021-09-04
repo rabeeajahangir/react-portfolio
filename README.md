@@ -3,8 +3,9 @@
 
 ## Table of Contents
 1. [Introduction](#Introduction)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
+2. [Usage](#Usage)
+3. [Contributions](#Contributions)
+4. [Screenshots](#Screenshots)
 
 
 ## Introduction:
